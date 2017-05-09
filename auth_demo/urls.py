@@ -25,7 +25,7 @@ from paypal_store import views as paypal_views
 from threads import views as forum_views
 
 if settings.DEBUG:
-    import debug_toolbar
+    #import debug_toolbar
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
