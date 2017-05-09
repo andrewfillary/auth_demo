@@ -24,7 +24,7 @@ from magazines import views as magazine_views
 from paypal_store import views as paypal_views
 from threads import views as forum_views
 
-if settings.DEBUG:
+#if settings.DEBUG:
     #import debug_toolbar
 
 urlpatterns = [
