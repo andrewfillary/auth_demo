@@ -12,10 +12,10 @@ DATABASES = {
 }
 
 # Stripe environment variables
-STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', '<your STRIPE_PUBLISHABLE key>')
-STRIPE_SECRET = os.getenv('STRIPE_SECRET', '<your STRIPE_SECRET key>')
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_skWYpLAsIvHYQZq5JizLocrW')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_1SOfreX572PCJQa5GK6GKJZo')
 
 # Paypal environment variables
 SITE_URL = 'http://127.0.0.1:8000'
-PAYPAL_NOTIFY_URL = '<your ngrok URL>'
-PAYPAL_RECEIVER_EMAIL = '<your Paypal merchant email>'
+PAYPAL_NOTIFY_URL = 'http://d2cfadaf.ngrok.io/a-very-hard-to-guess-url/'
+PAYPAL_RECEIVER_EMAIL = 'andy1@live.com>'

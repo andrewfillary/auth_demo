@@ -21,11 +21,11 @@ INSTALLED_APPS = [
     'django.contrib.flatpages',
     'django_forms_bootstrap',
     'paypal.standard.ipn',
-    'rest_framework',
+    #'rest_framework',
     'tinymce',
     'emoticons',
     'disqus',
-    'reusable_blog',
+    #'reusable_blog',
     'hello',
     'accounts',
     'paypal_store',
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'auth_demo.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
