@@ -5,10 +5,12 @@ DEBUG = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': 'mysql://be6a5c2ebe7c3b:5ee8b072@eu-cdbr-west-01.cleardb.com/heroku_facec2a9daa4f07?reconnect=true',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
+
+DATABASES['default'] = dj_database_url.config("mysql://be6a5c2ebe7c3b:5ee8b072@eu-cdbr-west-01.cleardb.com/heroku_facec2a9daa4f07?")
 
 # Stripe environment variables
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', '<your STRIPE_PUBLISHABLE key>')
